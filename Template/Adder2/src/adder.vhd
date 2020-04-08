@@ -3,7 +3,14 @@
 --! @file      adder.vhd
 --!
 --! @brief     Implementation of simple 1-bit adder
---! @details   Implements adder using library ports
+--! @details   
+--!
+--!         Implements adder unsing ROM. Should synthesize as a LUT. This design
+--!         differs from the first because it has only one process. This will
+--!         cause the signal to change one event later. Due to this, this design
+--!         should not be assynchornous, otherwise, you'd never know when to read
+--!         the signal. We included the clock to make it predictable.
+--!             
 --!
 --! @author    Guilherme Shimabuko 
 --! 
@@ -57,6 +64,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.adder_pkg.all;
 
 
 -- Entity ------------------------------------------------------------------------
@@ -67,6 +75,9 @@ use ieee.numeric_std.all;
 entity FullAdd is 
     port( 
             -- Inputs -----------------------------------------------------------
+            --! Input Clock Signal
+            Clk:    in std_logic;
+
             --! Input with first operand
             A:      in std_logic;
 
@@ -90,23 +101,24 @@ end FullAdd;
 --!
 --! @details 
 --!
---!         This 1-bit Full Adder uses library ports to present the output.
+--!         This 1-bit Full Adder uses a ROM to implement a LUT to ensure 
+--!         consistent delay between Sum Output and Carry Output.
 --!
---!         Although simple and relatively efficient, this approach has different
---!         delays for Sum and Cout ports. At first, this may not appear in simu-
---!         lations, as the delay is very small, but it tends to worsen in bigger
---!         designs.
---!
+--!         This is considered a relatively fast architecture with consistent
+--!         delay for all outputs, but it uses a lot of area.
 ----------------------------------------------------------------------------------
 architecture behavioural of FullAdd is
-
+signal addr : std_logic_vector (2 downto 0);
 begin
-
-    --! This process activates everytime there's a change in A, B or Cin and gives
-    --! the addition result. Overflow result is given by Cout
-    Output: process (A, B, Cin)
+    --! This process separates the result from the LUT into the proper outputs
+    Output: process (Clk)
     begin
-       sum  <= A XOR B XOR Cin;
-       Cout <=  (A AND B) OR (A AND Cin) OR (Cin AND B);
+        if (rising_edge(Clk)) then
+            addr <= (A & B & Cin);
+            sum  <= ADDER_RES (to_integer(unsigned(addr)))(1);
+            Cout <= ADDER_RES (to_integer(unsigned(addr)))(0);
+        else
+            addr <= addr;
+        end if;
     end process;
 end behavioural;

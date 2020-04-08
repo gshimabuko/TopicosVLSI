@@ -81,7 +81,6 @@ architecture Behavioral of adder_tb is
     component FullAdd is
         port(
             -- Inputs ------------------------------------------------------------
-            Clk:    in std_logic;
             A:      in std_logic;
             B:      in std_logic;
             Cin:    in std_logic;
@@ -128,7 +127,6 @@ begin
     s_clk <= not s_clk after CLK_HALF_PERIOD;
     DUT: FullAdd
         port map(
-            clk     => s_clk,
             A       => s_A,
             B       => s_B,
             Cin     => s_Cin,

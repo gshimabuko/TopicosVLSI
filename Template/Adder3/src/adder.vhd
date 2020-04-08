@@ -3,14 +3,7 @@
 --! @file      adder.vhd
 --!
 --! @brief     Implementation of simple 1-bit adder
---! @details   
---!
---!         Implements adder unsing ROM. Should synthesize as a LUT. This design
---!         differs from the first because it has only one process. This will
---!         cause the signal to change one event later. Due to this, this design
---!         should not be assynchornous, otherwise, you'd never know when to read
---!         the signal. We included the clock to make it predictable.
---!             
+--! @details   Implements adder unsing ROM. Should synthesize as a LUT.
 --!
 --! @author    Guilherme Shimabuko 
 --! 
@@ -75,9 +68,6 @@ use work.adder_pkg.all;
 entity FullAdd is 
     port( 
             -- Inputs -----------------------------------------------------------
-            --! Input Clock Signal
-            Clk:    in std_logic;
-
             --! Input with first operand
             A:      in std_logic;
 
@@ -108,17 +98,20 @@ end FullAdd;
 --!         delay for all outputs, but it uses a lot of area.
 ----------------------------------------------------------------------------------
 architecture behavioural of FullAdd is
+
+--! This signal chooses the address on the LUT where the result should be
 signal addr : std_logic_vector (2 downto 0);
 begin
-    --! This process separates the result from the LUT into the proper outputs
-    Output: process (Clk)
+    --! This process assembles the LUT address from the input signals
+    Add: process (A, B, Cin)
     begin
-        if (rising_edge(Clk)) then
-            addr <= (A & B & Cin);
-            sum  <= ADDER_RES (to_integer(unsigned(addr)))(1);
-            Cout <= ADDER_RES (to_integer(unsigned(addr)))(0);
-        else
-            addr <= addr;
-        end if;
+       addr <= (A & B & Cin);
+    end process;
+
+    --! This process separates the result from the LUT into the proper outputs
+    Output: process (addr)
+    begin
+       sum  <= ADDER_RES (to_integer(unsigned(addr)))(1);
+       Cout <= ADDER_RES (to_integer(unsigned(addr)))(0);
     end process;
 end behavioural;

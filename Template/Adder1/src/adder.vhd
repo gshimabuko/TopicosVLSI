@@ -3,7 +3,7 @@
 --! @file      adder.vhd
 --!
 --! @brief     Implementation of simple 1-bit adder
---! @details   Implements adder unsing ROM. Should synthesize as a LUT.
+--! @details   Implements adder using library ports
 --!
 --! @author    Guilherme Shimabuko 
 --! 
@@ -57,7 +57,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.adder_pkg.all;
 
 
 -- Entity ------------------------------------------------------------------------
@@ -91,27 +90,23 @@ end FullAdd;
 --!
 --! @details 
 --!
---!         This 1-bit Full Adder uses a ROM to implement a LUT to ensure 
---!         consistent delay between Sum Output and Carry Output.
+--!         This 1-bit Full Adder uses library ports to present the output.
 --!
---!         This is considered a relatively fast architecture with consistent
---!         delay for all outputs, but it uses a lot of area.
+--!         Although simple and relatively efficient, this approach has different
+--!         delays for Sum and Cout ports. At first, this may not appear in simu-
+--!         lations, as the delay is very small, but it tends to worsen in bigger
+--!         designs.
+--!
 ----------------------------------------------------------------------------------
 architecture behavioural of FullAdd is
 
---! This signal chooses the address on the LUT where the result should be
-signal addr : std_logic_vector (2 downto 0);
 begin
-    --! This process assembles the LUT address from the input signals
-    Add: process (A, B, Cin)
-    begin
-       addr <= (A & B & Cin);
-    end process;
 
-    --! This process separates the result from the LUT into the proper outputs
-    Output: process (addr)
+    --! This process activates everytime there's a change in A, B or Cin and gives
+    --! the addition result. Overflow result is given by Cout
+    Output: process (A, B, Cin)
     begin
-       sum  <= ADDER_RES (to_integer(unsigned(addr)))(1);
-       Cout <= ADDER_RES (to_integer(unsigned(addr)))(0);
+       sum  <= A XOR B XOR Cin;
+       Cout <=  (A AND B) OR (A AND Cin) OR (Cin AND B);
     end process;
 end behavioural;
