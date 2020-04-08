@@ -1,0 +1,71 @@
+\hypertarget{classFullAdd_1_1behavioural}{}\doxysection{behavioural Architecture Reference}
+\label{classFullAdd_1_1behavioural}\index{behavioural@{behavioural}}
+
+
+R\+OM Based 1-\/bit Full Adder.  
+
+
+\doxysubsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFullAdd_1_1behavioural_afd220cd4463cf6b9af31cef5c531c99c}{Add}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_aefb0fe5c03de49e04a8804270d82d286}{A}}} \textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_a5efe61e4691199c7d3ffbbe4872056b4}{B}}} \textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_a4ca3a2d6d69bbe9b21b97f6b0a8f1847}{Cin}}} \textcolor{vhdlchar}{ }} )}
+\begin{DoxyCompactList}\small\item\em This process assembles the L\+UT address from the input signals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFullAdd_1_1behavioural_a989bf441216c2bade79310c00b0617cb}{Output}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}{addr}}} \textcolor{vhdlchar}{ }} )}
+\begin{DoxyCompactList}\small\item\em This process separates the result from the L\+UT into the proper outputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}{addr}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic\+\_\+vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\begin{DoxyCompactList}\small\item\em This signal chooses the address on the L\+UT where the result should be. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+OM Based 1-\/bit Full Adder. 
+
+\begin{DoxyVerb}    This 1-bit Full Adder uses a ROM to implement a LUT to ensure 
+    consistent delay between Sum Output and Carry Output.
+
+    This is considered a relatively fast architecture with consistent
+    delay for all outputs, but it uses a lot of area.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFullAdd_1_1behavioural_afd220cd4463cf6b9af31cef5c531c99c}\label{classFullAdd_1_1behavioural_afd220cd4463cf6b9af31cef5c531c99c}} 
+\index{behavioural@{behavioural}!Add@{Add}}
+\index{Add@{Add}!behavioural@{behavioural}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily  {\bfseries \textcolor{vhdlchar}{ }} Add(\begin{DoxyParamCaption}\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_aefb0fe5c03de49e04a8804270d82d286}{A}}} \textcolor{vhdlchar}{ }} {\em } ,  }\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_a5efe61e4691199c7d3ffbbe4872056b4}{B}}} \textcolor{vhdlchar}{ }} {\em } ,  }\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_a4ca3a2d6d69bbe9b21b97f6b0a8f1847}{Cin}}} \textcolor{vhdlchar}{ }} {\em } }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [Process]}}
+
+
+
+This process assembles the L\+UT address from the input signals. 
+
+\mbox{\Hypertarget{classFullAdd_1_1behavioural_a989bf441216c2bade79310c00b0617cb}\label{classFullAdd_1_1behavioural_a989bf441216c2bade79310c00b0617cb}} 
+\index{behavioural@{behavioural}!Output@{Output}}
+\index{Output@{Output}!behavioural@{behavioural}}
+\doxysubsubsection{\texorpdfstring{Output()}{Output()}}
+{\footnotesize\ttfamily  {\bfseries \textcolor{vhdlchar}{ }} Output(\begin{DoxyParamCaption}\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}{addr}}} \textcolor{vhdlchar}{ }} {\em } }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [Process]}}
+
+
+
+This process separates the result from the L\+UT into the proper outputs. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}\label{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}} 
+\index{behavioural@{behavioural}!addr@{addr}}
+\index{addr@{addr}!behavioural@{behavioural}}
+\doxysubsubsection{\texorpdfstring{addr}{addr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFullAdd_1_1behavioural_a1ddd1a464dac0201f00547b256ebe7b9}{addr}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic\+\_\+vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Signal]}}
+
+
+
+This signal chooses the address on the L\+UT where the result should be. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{adder_8vhd}{adder.\+vhd}}\end{DoxyCompactItemize}
