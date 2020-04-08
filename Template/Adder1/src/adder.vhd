@@ -93,6 +93,7 @@ end FullAdd;
 --!
 --!         This 1-bit Full Adder uses a ROM to implement a LUT to ensure 
 --!         consistent delay between Sum Output and Carry Output.
+--!
 --!         This is considered a relatively fast architecture with consistent
 --!         delay for all outputs, but it uses a lot of area.
 ----------------------------------------------------------------------------------

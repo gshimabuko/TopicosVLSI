@@ -2,7 +2,7 @@
 --! 
 --! @file       adder_tb_pkg.vhd
 --!
---! @brief      Testbench for a simple 1-bit adder
+--! @brief      Testbench for a simple 1-bit adder \ref FullAdd
 --! @details    Uses a RAM for Input and another RAM for expected output.
 --!             Implements Adder and compares output with Expected Output Ram.
 --!
@@ -58,9 +58,25 @@ use IEEE.STD_LOGIC_TEXTIO.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use STD.TEXTIO.ALL;
 
+-- Entity ------------------------------------------------------------------------
+--! @brief      Testbench for a simple 1-bit adder \ref FullAdd
+--! @details    Uses a RAM for Input and another RAM for expected output.
+--!             Implements Adder and compares output with Expected Output Ram.
+----------------------------------------------------------------------------------
 entity adder_tb is
 end entity adder_tb;
 
+-- Architecture ------------------------------------------------------------------
+--! @brief  Implements testbench for the 1-bit full adder from \ref FullAdd
+--!
+--! @details 
+--!
+--!         Instantiates \ref Input_ROM to stimulate inputs from \ref FullAdd.
+--!
+--!         Instantiates \ref Output_ROM to provide expected outputs
+--!
+--!         Instantates \ref FullAdd, stimulates inputs with \ref Input_ROM and compare
+--!         outputs with \ref Output_ROM
 architecture Behavioral of adder_tb is
     component FullAdd is
         port(

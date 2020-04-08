@@ -7,9 +7,9 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node4 [label="FullAdd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFullAdd.html",tooltip="Full Adder Entity Declaration."];
   Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="adder_tb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadder__tb.html",tooltip=" "];
-  Node3 [label="Input_ROM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInput__ROM.html",tooltip=" "];
+  Node1 [label="adder_tb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classadder__tb.html",tooltip="Testbench for a simple 1-bit adder FullAdd."];
+  Node3 [label="Input_ROM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classInput__ROM.html",tooltip="Input ROM for testbench."];
   Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node0 [label="Output_ROM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOutput__ROM.html",tooltip=" "];
+  Node0 [label="Output_ROM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOutput__ROM.html",tooltip="Output ROM for testbench."];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

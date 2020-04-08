@@ -77,6 +77,9 @@ $(function() {
 <div class="title">Input_ROM Entity Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Input ROM for testbench.  
+ <a href="classInput__ROM.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Input_ROM:</div>
 <div class="dyncontent">
@@ -87,6 +90,7 @@ Inheritance diagram for Input_ROM:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInput__ROM_1_1Behavioral.html">Behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output ROM.  <a href="classInput__ROM_1_1Behavioral.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -101,11 +105,20 @@ Use Clauses</h2></td></tr>
 <tr class="heading"><td colspan="3"><h2 class="groupheader"><a name="Ports"></a>
 Ports</h2></td></tr>
  <tr class="memitem:a1d085d98cff2d23efb9f57120923db26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInput__ROM.html#a1d085d98cff2d23efb9f57120923db26">address_in</a> &#160;</td><td class="memItemLeft" align="right" valign="top"> <b><b><span class="keywordflow">in</span><span class="vhdlchar"> </span></b></b>&#160;</td><td class="memItemRight" valign="bottom"> <b><span class="keywordtype">integer</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="keywordflow">range</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="keywordflow">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a1d085d98cff2d23efb9f57120923db26"><td class="mdescLeft">&#160;</td><td class="mdescLeft">&#160;</td><td class="mdescRight">Input signal indicating memory address to look for.  <a href="#a1d085d98cff2d23efb9f57120923db26"></a><br /></td></tr>
 <tr class="memitem:a52699dc1d2dcbdcafd952b5e5e0cbb30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInput__ROM.html#a52699dc1d2dcbdcafd952b5e5e0cbb30">A_out</a> &#160;</td><td class="memItemLeft" align="right" valign="top"> <b><b><span class="keywordflow">out</span><span class="vhdlchar"> </span></b></b>&#160;</td><td class="memItemRight" valign="bottom"> <b><span class="keywordtype">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a52699dc1d2dcbdcafd952b5e5e0cbb30"><td class="mdescLeft">&#160;</td><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs stimulus for DUT "A Input port".  <a href="#a52699dc1d2dcbdcafd952b5e5e0cbb30"></a><br /></td></tr>
 <tr class="memitem:a2c0dc884a66f6c952b91180ecc561f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInput__ROM.html#a2c0dc884a66f6c952b91180ecc561f9f">B_out</a> &#160;</td><td class="memItemLeft" align="right" valign="top"> <b><b><span class="keywordflow">out</span><span class="vhdlchar"> </span></b></b>&#160;</td><td class="memItemRight" valign="bottom"> <b><span class="keywordtype">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a2c0dc884a66f6c952b91180ecc561f9f"><td class="mdescLeft">&#160;</td><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs stimulus for DUT "B Input Port".  <a href="#a2c0dc884a66f6c952b91180ecc561f9f"></a><br /></td></tr>
 <tr class="memitem:ae61d16212c29342a12356940001e030f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInput__ROM.html#ae61d16212c29342a12356940001e030f">C_out</a> &#160;</td><td class="memItemLeft" align="right" valign="top"> <b><b><span class="keywordflow">out</span><span class="vhdlchar"> </span></b></b>&#160;</td><td class="memItemRight" valign="bottom"> <b><span class="keywordtype">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:ae61d16212c29342a12356940001e030f"><td class="mdescLeft">&#160;</td><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs stimulus for DUT "Cin Input Port".  <a href="#ae61d16212c29342a12356940001e030f"></a><br /></td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Input ROM for testbench. </p>
+<p><br  />
+ </p><pre class="fragment">    ROM containing data to stimulate input ports of \ref FullAdd
+    during testing.
+</pre> </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a52699dc1d2dcbdcafd952b5e5e0cbb30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52699dc1d2dcbdcafd952b5e5e0cbb30">&#9670;&nbsp;</a></span>A_out</h2>
 
@@ -125,6 +138,8 @@ Ports</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Outputs stimulus for DUT "A Input port". </p>
 
 </div>
 </div>
@@ -148,6 +163,8 @@ Ports</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Input signal indicating memory address to look for. </p>
+
 </div>
 </div>
 <a id="a2c0dc884a66f6c952b91180ecc561f9f"></a>
@@ -170,6 +187,8 @@ Ports</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Outputs stimulus for DUT "B Input Port". </p>
+
 </div>
 </div>
 <a id="ae61d16212c29342a12356940001e030f"></a>
@@ -191,6 +210,8 @@ Ports</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Outputs stimulus for DUT "Cin Input Port". </p>
 
 </div>
 </div>
@@ -266,7 +287,7 @@ Ports</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 18:47:37 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 21:04:53 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

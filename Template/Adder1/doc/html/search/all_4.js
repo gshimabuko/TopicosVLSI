@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fulladd_20',['FullAdd',['../classFullAdd.html',1,'FullAdd'],['../classadder__tb_1_1Behavioral.html#a19d391d41870d1a416aa547b675bf2cd',1,'adder_tb.Behavioral.FullAdd()']]]
+  ['enable_5fproc_20',['enable_proc',['../classadder__tb_1_1Behavioral.html#a904957863970ead323eaac6cdc178fa1',1,'adder_tb::Behavioral']]]
 ];

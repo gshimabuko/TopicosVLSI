@@ -83,6 +83,9 @@ $(function() {
 <div class="title">Behavioral Architecture Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implements testbench for the 1-bit full adder from <a class="el" href="classFullAdd.html">FullAdd</a>.  
+ <a href="classadder__tb_1_1Behavioral.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Processes"></a>
 Processes</h2></td></tr>
@@ -118,7 +121,15 @@ Instantiations</h2></td></tr>
 <tr class="memitem:a7d98c04f0d71abb5858bd55ee9fc3ff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classadder__tb_1_1Behavioral.html#a7d98c04f0d71abb5858bd55ee9fc3ff4">stim</a>&#160;</td><td class="memItemRight" valign="bottom">  <b>Input_ROM</b>  <em><a class="el" href="classInput__ROM.html">&lt;Entity Input_ROM&gt;</a></em></td></tr>
 <tr class="memitem:a3ec038c00c20e01e57723a58329c0e0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classadder__tb_1_1Behavioral.html#a3ec038c00c20e01e57723a58329c0e0a">expec</a>&#160;</td><td class="memItemRight" valign="bottom">  <b>Output_ROM</b>  <em><a class="el" href="classOutput__ROM.html">&lt;Entity Output_ROM&gt;</a></em></td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements testbench for the 1-bit full adder from <a class="el" href="classFullAdd.html">FullAdd</a>. </p>
+<pre class="fragment">    Instantiates \ref Input_ROM to stimulate inputs from \ref FullAdd.
+
+    Instantiates \ref Output_ROM to provide expected outputs
+
+    Instantates \ref FullAdd, stimulates inputs with \ref Input_ROM and compare
+    outputs with \ref Output_ROM
+</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a904957863970ead323eaac6cdc178fa1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a904957863970ead323eaac6cdc178fa1">&#9670;&nbsp;</a></span>enable_proc()</h2>
 
@@ -540,7 +551,7 @@ Instantiations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 18:47:37 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 21:04:53 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

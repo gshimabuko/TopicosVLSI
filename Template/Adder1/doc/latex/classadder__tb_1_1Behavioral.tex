@@ -1,5 +1,10 @@
 \hypertarget{classadder__tb_1_1Behavioral}{}\doxysection{Behavioral Architecture Reference}
 \label{classadder__tb_1_1Behavioral}\index{Behavioral@{Behavioral}}
+
+
+Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullAdd}{Full\+Add}}.  
+
+
 \doxysubsection*{Processes}
  \begin{DoxyCompactItemize}
 \item 
@@ -54,6 +59,18 @@
 \mbox{\hyperlink{classadder__tb_1_1Behavioral_a3ec038c00c20e01e57723a58329c0e0a}{expec}}  {\bfseries Output\+\_\+\+R\+OM}   
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullAdd}{Full\+Add}}. 
+
+\begin{DoxyVerb}    Instantiates \ref Input_ROM to stimulate inputs from \ref FullAdd.
+
+    Instantiates \ref Output_ROM to provide expected outputs
+
+    Instantates \ref FullAdd, stimulates inputs with \ref Input_ROM and compare
+    outputs with \ref Output_ROM
+\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classadder__tb_1_1Behavioral_a904957863970ead323eaac6cdc178fa1}\label{classadder__tb_1_1Behavioral_a904957863970ead323eaac6cdc178fa1}} 

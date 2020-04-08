@@ -2,13 +2,18 @@
 \label{classInput__ROM}\index{Input\_ROM@{Input\_ROM}}
 
 
+Input R\+OM for testbench.  
+
+
+
+
 Inheritance diagram for Input\+\_\+\+R\+OM\+:
 % FIG 0
 \doxysubsection*{Entities}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classInput__ROM_1_1Behavioral}{Behavioral}} architecture
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Output R\+OM. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Libraries}
  \begin{DoxyCompactItemize}
 \item 
@@ -25,14 +30,23 @@ Inheritance diagram for Input\+\_\+\+R\+OM\+:
  \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classInput__ROM_a1d085d98cff2d23efb9f57120923db26}{address\+\_\+in}}  {\bfseries {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{keywordtype}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{keywordflow}{range}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }} 
-\item 
+\begin{DoxyCompactList}\small\item\em Input signal indicating memory address to look for. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classInput__ROM_a52699dc1d2dcbdcafd952b5e5e0cbb30}{A\+\_\+out}}  {\bfseries {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
-\item 
+\begin{DoxyCompactList}\small\item\em Outputs stimulus for D\+UT \char`\"{}\+A Input port\char`\"{}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classInput__ROM_a2c0dc884a66f6c952b91180ecc561f9f}{B\+\_\+out}}  {\bfseries {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
-\item 
+\begin{DoxyCompactList}\small\item\em Outputs stimulus for D\+UT \char`\"{}\+B Input Port\char`\"{}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classInput__ROM_ae61d16212c29342a12356940001e030f}{C\+\_\+out}}  {\bfseries {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Outputs stimulus for D\+UT \char`\"{}\+Cin Input Port\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Input R\+OM for testbench. 
+
+~\newline
+ \begin{DoxyVerb}    ROM containing data to stimulate input ports of \ref FullAdd
+    during testing.
+\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classInput__ROM_a52699dc1d2dcbdcafd952b5e5e0cbb30}\label{classInput__ROM_a52699dc1d2dcbdcafd952b5e5e0cbb30}} 
@@ -41,11 +55,19 @@ Inheritance diagram for Input\+\_\+\+R\+OM\+:
 \doxysubsubsection{\texorpdfstring{A\_out}{A\_out}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classInput__ROM_a52699dc1d2dcbdcafd952b5e5e0cbb30}{A\+\_\+out}} {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}
 
+
+
+Outputs stimulus for D\+UT \char`\"{}\+A Input port\char`\"{}. 
+
 \mbox{\Hypertarget{classInput__ROM_a1d085d98cff2d23efb9f57120923db26}\label{classInput__ROM_a1d085d98cff2d23efb9f57120923db26}} 
 \index{Input\_ROM@{Input\_ROM}!address\_in@{address\_in}}
 \index{address\_in@{address\_in}!Input\_ROM@{Input\_ROM}}
 \doxysubsubsection{\texorpdfstring{address\_in}{address\_in}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classInput__ROM_a1d085d98cff2d23efb9f57120923db26}{address\+\_\+in}} {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{keywordtype}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{keywordflow}{range}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}
+
+
+
+Input signal indicating memory address to look for. 
 
 \mbox{\Hypertarget{classInput__ROM_a2c0dc884a66f6c952b91180ecc561f9f}\label{classInput__ROM_a2c0dc884a66f6c952b91180ecc561f9f}} 
 \index{Input\_ROM@{Input\_ROM}!B\_out@{B\_out}}
@@ -53,11 +75,19 @@ Inheritance diagram for Input\+\_\+\+R\+OM\+:
 \doxysubsubsection{\texorpdfstring{B\_out}{B\_out}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classInput__ROM_a2c0dc884a66f6c952b91180ecc561f9f}{B\+\_\+out}} {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}
 
+
+
+Outputs stimulus for D\+UT \char`\"{}\+B Input Port\char`\"{}. 
+
 \mbox{\Hypertarget{classInput__ROM_ae61d16212c29342a12356940001e030f}\label{classInput__ROM_ae61d16212c29342a12356940001e030f}} 
 \index{Input\_ROM@{Input\_ROM}!C\_out@{C\_out}}
 \index{C\_out@{C\_out}!Input\_ROM@{Input\_ROM}}
 \doxysubsubsection{\texorpdfstring{C\_out}{C\_out}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classInput__ROM_ae61d16212c29342a12356940001e030f}{C\+\_\+out}} {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}
+
+
+
+Outputs stimulus for D\+UT \char`\"{}\+Cin Input Port\char`\"{}. 
 
 \mbox{\Hypertarget{classInput__ROM_a0a6af6eef40212dbaf130d57ce711256}\label{classInput__ROM_a0a6af6eef40212dbaf130d57ce711256}} 
 \index{Input\_ROM@{Input\_ROM}!ieee@{ieee}}

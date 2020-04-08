@@ -80,6 +80,9 @@ $(function() {
 <div class="title">Behavioral Architecture Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Output ROM.  
+ <a href="classInput__ROM_1_1Behavioral.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Constants"></a>
 Constants</h2></td></tr>
@@ -89,7 +92,17 @@ Constants</h2></td></tr>
 Types</h2></td></tr>
  <tr class="memitem:a5eea7787c0a285c31d3fa6477bf469e3"><td class="memItemLeft" align="right" valign="top"><b><a class="el" href="classInput__ROM_1_1Behavioral.html#a5eea7787c0a285c31d3fa6477bf469e3">rom_array</a>&#160;</td><td class="memItemRight" valign="bottom"><b><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="keywordflow">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="keywordtype">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">2</span> <span class="vhdlchar"> </span><span class="keywordflow">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></b></td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Output ROM. </p>
+<pre class="fragment">    Uses rom_array type to initialize LUT with stimulus values for DUT 
+    inputs
+
+    A_out outputs data with column index 0 with stimulus for DUT input A
+
+    B_out outputs data with column index 1 with stimulus for DUT input B
+
+    C_out outputs data with column index 2 with stimulus for DUT input Cin
+</pre> </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6775092a502808f4c0ea2eb1c6690073"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6775092a502808f4c0ea2eb1c6690073">&#9670;&nbsp;</a></span>rom</h2>
 
@@ -140,7 +153,7 @@ Types</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 18:47:37 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 21:04:53 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
