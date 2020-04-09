@@ -8,7 +8,11 @@ Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullA
 \doxysubsection*{Processes}
  \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classadder__tb_1_1Behavioral_a904957863970ead323eaac6cdc178fa1}{enable\+\_\+proc}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_a061d8717fdc1752c6491721d387b380c}{s\+\_\+clk}}} \textcolor{vhdlchar}{ }} )}
+\mbox{\hyperlink{classadder__tb_1_1Behavioral_a739c3b85d8cb341016dec9c201d7c6b1}{T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+CS}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_a061d8717fdc1752c6491721d387b380c}{s\+\_\+clk}}} \textcolor{vhdlchar}{ }} )}
+\item 
+\mbox{\hyperlink{classadder__tb_1_1Behavioral_a9094a8e9fc481c6ac996eb217543b7a2}{T\+E\+S\+T\+\_\+\+N\+S\+\_\+\+P\+R\+OC}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}{s\+\_\+cstate}}} \textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_af56ff535faebf1e3e66705a8b1759478}{s\+\_\+flag}}} \textcolor{vhdlchar}{ }} )}
+\item 
+\mbox{\hyperlink{classadder__tb_1_1Behavioral_a05376afff5219785d5534d7ce762e67b}{T\+E\+S\+T\+\_\+\+O\+U\+T\+\_\+\+P\+R\+OC}}{\bfseries  ( {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_a061d8717fdc1752c6491721d387b380c}{s\+\_\+clk}}} \textcolor{vhdlchar}{ }} )}
 \end{DoxyCompactItemize}
 \doxysubsection*{Components}
  \begin{DoxyCompactItemize}
@@ -48,6 +52,10 @@ Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullA
 \mbox{\hyperlink{classadder__tb_1_1Behavioral_a54ef717f9358fa405ee62ad3d6af5192}{s\+\_\+err\+\_\+count}} {\bfseries \textcolor{keywordtype}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{keywordflow}{range}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{8} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\+:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }} 
 \item 
 \mbox{\hyperlink{classadder__tb_1_1Behavioral_a2537aa856d7176122868513053989b9d}{s\+\_\+address\+\_\+in}} {\bfseries \textcolor{keywordtype}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{keywordflow}{range}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\+:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }} 
+\item 
+\mbox{\hyperlink{classadder__tb_1_1Behavioral_ad74077d3a4c2118f17101f076025677d}{s\+\_\+nstate}} {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb__pkg_a0ed20d3825f1856f6fbbb4e0960d7020}{T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+ST}}} \textcolor{vhdlchar}{ }} 
+\item 
+\mbox{\hyperlink{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}{s\+\_\+cstate}} {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb__pkg_a0ed20d3825f1856f6fbbb4e0960d7020}{T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+ST}}} \textcolor{vhdlchar}{ }} 
 \end{DoxyCompactItemize}
 \doxysubsection*{Instantiations}
  \begin{DoxyCompactItemize}
@@ -69,15 +77,37 @@ Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullA
 
     Instantates \ref FullAdd, stimulates inputs with \ref Input_ROM and compare
     outputs with \ref Output_ROM
+
+    S0_START just resets test signals to proper positions
+
+    S1_STIM stimulates the adder
+
+    S2_COMP always happens one clock cycle after S1_STIM, giving adder
+    time to stabilize outputs before comparison
+
+    S3_DONE once all data from output ROM is compared, finish sim and
+    shows wheter or not design has been approved.
 \end{DoxyVerb}
  
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classadder__tb_1_1Behavioral_a904957863970ead323eaac6cdc178fa1}\label{classadder__tb_1_1Behavioral_a904957863970ead323eaac6cdc178fa1}} 
-\index{Behavioral@{Behavioral}!enable\_proc@{enable\_proc}}
-\index{enable\_proc@{enable\_proc}!Behavioral@{Behavioral}}
-\doxysubsubsection{\texorpdfstring{enable\_proc()}{enable\_proc()}}
-{\footnotesize\ttfamily enable\+\_\+proc (\begin{DoxyParamCaption}\item[{}]{s\+\_\+clk }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classadder__tb_1_1Behavioral_a739c3b85d8cb341016dec9c201d7c6b1}\label{classadder__tb_1_1Behavioral_a739c3b85d8cb341016dec9c201d7c6b1}} 
+\index{Behavioral@{Behavioral}!TEST\_FSM\_CS@{TEST\_FSM\_CS}}
+\index{TEST\_FSM\_CS@{TEST\_FSM\_CS}!Behavioral@{Behavioral}}
+\doxysubsubsection{\texorpdfstring{TEST\_FSM\_CS()}{TEST\_FSM\_CS()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+CS (\begin{DoxyParamCaption}\item[{}]{s\+\_\+clk }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classadder__tb_1_1Behavioral_a9094a8e9fc481c6ac996eb217543b7a2}\label{classadder__tb_1_1Behavioral_a9094a8e9fc481c6ac996eb217543b7a2}} 
+\index{Behavioral@{Behavioral}!TEST\_NS\_PROC@{TEST\_NS\_PROC}}
+\index{TEST\_NS\_PROC@{TEST\_NS\_PROC}!Behavioral@{Behavioral}}
+\doxysubsubsection{\texorpdfstring{TEST\_NS\_PROC()}{TEST\_NS\_PROC()}}
+{\footnotesize\ttfamily  {\bfseries \textcolor{vhdlchar}{ }} T\+E\+S\+T\+\_\+\+N\+S\+\_\+\+P\+R\+OC(\begin{DoxyParamCaption}\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}{s\+\_\+cstate}}} \textcolor{vhdlchar}{ }} {\em } ,  }\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_af56ff535faebf1e3e66705a8b1759478}{s\+\_\+flag}}} \textcolor{vhdlchar}{ }} {\em } }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [Process]}}
+
+\mbox{\Hypertarget{classadder__tb_1_1Behavioral_a05376afff5219785d5534d7ce762e67b}\label{classadder__tb_1_1Behavioral_a05376afff5219785d5534d7ce762e67b}} 
+\index{Behavioral@{Behavioral}!TEST\_OUT\_PROC@{TEST\_OUT\_PROC}}
+\index{TEST\_OUT\_PROC@{TEST\_OUT\_PROC}!Behavioral@{Behavioral}}
+\doxysubsubsection{\texorpdfstring{TEST\_OUT\_PROC()}{TEST\_OUT\_PROC()}}
+{\footnotesize\ttfamily  {\bfseries \textcolor{vhdlchar}{ }} T\+E\+S\+T\+\_\+\+O\+U\+T\+\_\+\+P\+R\+OC(\begin{DoxyParamCaption}\item[{}]{{\bfseries {\bfseries \mbox{\hyperlink{classadder__tb_1_1Behavioral_a061d8717fdc1752c6491721d387b380c}{s\+\_\+clk}}} \textcolor{vhdlchar}{ }} {\em } }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [Process]}}
 
 
 
@@ -154,6 +184,12 @@ Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullA
 \doxysubsubsection{\texorpdfstring{s\_Cout}{s\_Cout}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classadder__tb_1_1Behavioral_aca965fe80576395f89354b94737e34eb}{s\+\_\+\+Cout}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\+:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\textquotesingle{}}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\textquotesingle{}}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Signal]}}
 
+\mbox{\Hypertarget{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}\label{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}} 
+\index{Behavioral@{Behavioral}!s\_cstate@{s\_cstate}}
+\index{s\_cstate@{s\_cstate}!Behavioral@{Behavioral}}
+\doxysubsubsection{\texorpdfstring{s\_cstate}{s\_cstate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classadder__tb_1_1Behavioral_aaaa607644992c83fc5ba812060105e80}{s\+\_\+cstate}} {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb__pkg_a0ed20d3825f1856f6fbbb4e0960d7020}{T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+ST}}} \textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Signal]}}
+
 \mbox{\Hypertarget{classadder__tb_1_1Behavioral_a54ef717f9358fa405ee62ad3d6af5192}\label{classadder__tb_1_1Behavioral_a54ef717f9358fa405ee62ad3d6af5192}} 
 \index{Behavioral@{Behavioral}!s\_err\_count@{s\_err\_count}}
 \index{s\_err\_count@{s\_err\_count}!Behavioral@{Behavioral}}
@@ -177,6 +213,12 @@ Implements testbench for the 1-\/bit full adder from \mbox{\hyperlink{classFullA
 \index{s\_flag@{s\_flag}!Behavioral@{Behavioral}}
 \doxysubsubsection{\texorpdfstring{s\_flag}{s\_flag}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classadder__tb_1_1Behavioral_af56ff535faebf1e3e66705a8b1759478}{s\+\_\+flag}} {\bfseries \textcolor{keywordtype}{std\+\_\+logic}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\+:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\textquotesingle{}}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\textquotesingle{}}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Signal]}}
+
+\mbox{\Hypertarget{classadder__tb_1_1Behavioral_ad74077d3a4c2118f17101f076025677d}\label{classadder__tb_1_1Behavioral_ad74077d3a4c2118f17101f076025677d}} 
+\index{Behavioral@{Behavioral}!s\_nstate@{s\_nstate}}
+\index{s\_nstate@{s\_nstate}!Behavioral@{Behavioral}}
+\doxysubsubsection{\texorpdfstring{s\_nstate}{s\_nstate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classadder__tb_1_1Behavioral_ad74077d3a4c2118f17101f076025677d}{s\+\_\+nstate}} {\bfseries {\bfseries \mbox{\hyperlink{classadder__tb__pkg_a0ed20d3825f1856f6fbbb4e0960d7020}{T\+E\+S\+T\+\_\+\+F\+S\+M\+\_\+\+ST}}} \textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Signal]}}
 
 \mbox{\Hypertarget{classadder__tb_1_1Behavioral_ab96ec954d3028c6def684cde2262825b}\label{classadder__tb_1_1Behavioral_ab96ec954d3028c6def684cde2262825b}} 
 \index{Behavioral@{Behavioral}!s\_Sum@{s\_Sum}}

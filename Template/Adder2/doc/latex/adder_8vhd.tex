@@ -17,7 +17,14 @@ Implementation of simple 1-\/bit adder.
 \doxysubsection{Detailed Description}
 Implementation of simple 1-\/bit adder. 
 
-Implements adder unsing R\+OM. Should synthesize as a L\+UT.
+~\newline
+ \begin{DoxyVerb}    Implements adder unsing ROM. Should synthesize as a LUT. This design
+    differs from the first because it has only one process. This will
+    cause the signal to change one event later. Due to this, this design
+    should not be assynchornous, otherwise, you'd never know when to read
+    the signal. We included the clock to make it predictable.
+\end{DoxyVerb}
+
 
 \begin{DoxyAuthor}{Author}
 Guilherme Shimabuko

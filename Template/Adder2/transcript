@@ -1,0 +1,20 @@
+project open /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/Adder2
+# Loading project Adder2
+vsim work.adder_tb
+# vsim work.adder_tb 
+# Start time: 15:38:01 on Apr 09,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_tb_pkg
+# Loading work.adder_tb(behavioral)
+# Loading work.adder_pkg(body)
+# Loading work.fulladd(behavioural)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.input_rom(behavioral)
+# Loading work.output_rom(behavioral)
+# End time: 15:38:53 on Apr 09,2020, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 0

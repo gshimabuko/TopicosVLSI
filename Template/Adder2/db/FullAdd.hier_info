@@ -1,0 +1,13 @@
+|FullAdd
+Clk => Cout~reg0.CLK
+Clk => Sum~reg0.CLK
+Clk => addr[0].CLK
+Clk => addr[1].CLK
+Clk => addr[2].CLK
+A => addr[2].DATAIN
+B => addr[1].DATAIN
+Cin => addr[0].DATAIN
+Sum << Sum~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Cout << Cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

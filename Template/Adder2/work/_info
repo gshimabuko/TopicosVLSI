@@ -7,239 +7,239 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder3
+d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder3
 Padder_pkg
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 w1586311348
-Z4 d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2
-Z5 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd
-Z6 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 w1586311348
+Z3 d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2
+Z4 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd
+Z5 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd
 l0
 L64
 VI[7@j?B988P`gHbf5C51;2
 !s100 iU>m@Dc]Tn7bALn5BNQQA0
-Z7 OV;C;10.5b;63
+Z6 OV;C;10.5b;63
 32
 b1
-Z8 !s110 1586375964
+Z7 !s110 1586375964
 !i10b 1
-Z9 !s108 1586375963.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd|
-Z11 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd|
+Z8 !s108 1586375963.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd|
+Z10 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder_pkg.vhd|
 !i113 1
-Z12 o-work work -2002 -explicit
-Z13 tExplicit 1 CvgOpt 0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
 Bbody
-Z14 DPx4 work 9 adder_pkg 0 22 I[7@j?B988P`gHbf5C51;2
+Z13 DPx4 work 9 adder_pkg 0 22 I[7@j?B988P`gHbf5C51;2
+R0
 R1
-R2
 l0
 L79
 V??Q9^Ko`5lm;O>i6?S3fO1
 !s100 Pzl>97ESSa<Y8T`RJ3_bW0
-R7
+R6
 32
-R8
+R7
 !i10b 1
+R8
 R9
 R10
+!i113 1
 R11
-!i113 1
 R12
-R13
 Eadder_tb
-Z15 w1586376707
-Z16 DPx4 work 12 adder_tb_pkg 0 22 4a8VBXG`nKcKI3MMK=;a]2
-Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z18 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z14 w1586377433
+Z15 DPx4 work 12 adder_tb_pkg 0 22 zk=IdV`4e<8i3;;mn:j>D2
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R0
 R1
-R2
-R4
-Z19 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd
-Z20 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd
+R3
+Z18 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd
+Z19 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd
 l0
-L67
-VU:2_63TZ9a8S407iVgLaD2
-!s100 _ngb[X4@?Nm;BFeJ_iA]V2
-R7
+L72
+VA9?LKdM0A]M8>j4c0[3f[3
+!s100 4NP7hRGW7haK^^;L?iL:C0
+R6
 32
-Z21 !s110 1586376712
+Z20 !s110 1586457094
 !i10b 1
-Z22 !s108 1586376712.000000
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd|
-Z24 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd|
+Z21 !s108 1586457094.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd|
+Z23 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavioral
+R15
 R16
 R17
-R18
+R0
 R1
-R2
-DEx4 work 8 adder_tb 0 22 U:2_63TZ9a8S407iVgLaD2
-l130
-L81
-VA;oeNEfXfYd[G0b00Y9[R0
-!s100 hlfaGMRj2jG@UIhoDD4mz3
-R7
+DEx4 work 8 adder_tb 0 22 A9?LKdM0A]M8>j4c0[3f[3
+l147
+L98
+VISo?U1N]a7e@1n=:@V>Mn0
+!s100 6E1@8z6<:BP;eZXz=5;ca3
+R6
 32
-R21
+R20
 !i10b 1
+R21
 R22
 R23
-R24
 !i113 1
+R11
 R12
-R13
 Padder_tb_pkg
+R0
 R1
-R2
-w1586376467
-R4
+w1586377434
+R3
 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb_pkg.vhd
 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb_pkg.vhd
 l0
-L42
-V4a8VBXG`nKcKI3MMK=;a]2
-!s100 1h6Ikl>k^DSZVa[TZM2LK0
-R7
+L58
+Vzk=IdV`4e<8i3;;mn:j>D2
+!s100 N5W^S92j7B=X>]NMhIc`^1
+R6
 32
-!s110 1586376472
+!s110 1586457090
 !i10b 1
-!s108 1586376472.000000
+!s108 1586457090.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb_pkg.vhd|
 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/adder_tb_pkg.vhd|
 !i113 1
+R11
 R12
-R13
 Efulladd
-Z25 w1586311344
-R14
-R17
+Z24 w1586311344
+R13
+R16
+R0
 R1
-R2
-R4
-Z26 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd
-Z27 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd
+R3
+Z25 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd
+Z26 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd
 l0
 L75
 VPoaDCdXH;X7m:SNEGFh0`1
 !s100 P<3:k0o[FHZC[1i:S4U^[3
-R7
+R6
 32
-Z28 !s110 1586375965
+Z27 !s110 1586375965
 !i10b 1
-Z29 !s108 1586375965.000000
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd|
-Z31 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd|
+Z28 !s108 1586375965.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd|
+Z30 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/src/adder.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavioural
-R14
-R17
+R13
+R16
+R0
 R1
-R2
 DEx4 work 7 fulladd 0 22 PoaDCdXH;X7m:SNEGFh0`1
 l112
 L110
 VBnQASB9XhOfIeRUC3F3jL2
 !s100 ;_86WNdgf2EHMnGHCZJh^0
-R7
+R6
 32
-R28
+R27
 !i10b 1
+R28
 R29
 R30
-R31
 !i113 1
+R11
 R12
-R13
 Einput_rom
-Z32 w1586306317
-Z33 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z34 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z31 w1586306317
+Z32 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R0
 R1
-R2
-R4
-Z35 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd
-Z36 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd
+R3
+Z34 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd
+Z35 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd
 l0
 L71
 VN_CVJjG=[eLKAUIo8DVd:0
 !s100 HY;c:GeAUYTN_1b;6=0K50
-R7
+R6
 32
-Z37 !s110 1586375969
+Z36 !s110 1586375969
 !i10b 1
-Z38 !s108 1586375969.000000
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd|
-Z40 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd|
+Z37 !s108 1586375969.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd|
+Z39 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Input_ROM.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavioral
+R32
 R33
-R34
+R0
 R1
-R2
 DEx4 work 9 input_rom 0 22 N_CVJjG=[eLKAUIo8DVd:0
 l111
 L101
 V^KBFb0^e6VGgL>2EmTLKa3
 !s100 f1CURNTX9khE@6M3Sf;Kl0
-R7
+R6
 32
-R37
+R36
 !i10b 1
+R37
 R38
 R39
-R40
 !i113 1
+R11
 R12
-R13
 Eoutput_rom
+R31
 R32
 R33
-R34
+R0
 R1
-R2
-R4
-Z41 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd
-Z42 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd
+R3
+Z40 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd
+Z41 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd
 l0
 L66
 VEaRD3E4eYCi2[l[F;`ai63
 !s100 CJ4UY2KHRI;f0Bn78^KS@2
-R7
+R6
 32
-Z43 !s110 1586375967
+Z42 !s110 1586375967
 !i10b 1
-Z44 !s108 1586375967.000000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd|
-Z46 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd|
+Z43 !s108 1586375967.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd|
+Z45 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder2/sim/Output_ROM.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavioral
+R32
 R33
-R34
+R0
 R1
-R2
 DEx4 work 10 output_rom 0 22 EaRD3E4eYCi2[l[F;`ai63
 l101
 L91
 V]ZANU5]cB_j;8SYc>gXfi1
 !s100 SkDYOjJB6d6Tod@Jj^8>>2
-R7
+R6
 32
-R43
+R42
 !i10b 1
+R43
 R44
 R45
-R46
 !i113 1
+R11
 R12
-R13

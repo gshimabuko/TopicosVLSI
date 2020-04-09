@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr  9 15:53:25 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FullAdd
+Top-level Entity Name : FullAdd
+Family : Cyclone IV E
+Total logic elements : 5
+    Total combinational functions : 2
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

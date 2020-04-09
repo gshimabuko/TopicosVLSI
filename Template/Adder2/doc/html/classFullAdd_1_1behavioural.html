@@ -86,15 +86,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Processes"></a>
 Processes</h2></td></tr>
- <tr class="memitem:afd220cd4463cf6b9af31cef5c531c99c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFullAdd_1_1behavioural.html#afd220cd4463cf6b9af31cef5c531c99c">Add</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classFullAdd.html#aefb0fe5c03de49e04a8804270d82d286">A</a></b> <span class="vhdlchar"> </span></b> , <b><b><a class="el" href="classFullAdd.html#a5efe61e4691199c7d3ffbbe4872056b4">B</a></b> <span class="vhdlchar"> </span></b> , <b><b><a class="el" href="classFullAdd.html#a4ca3a2d6d69bbe9b21b97f6b0a8f1847">Cin</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
-<tr class="memdesc:afd220cd4463cf6b9af31cef5c531c99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This process assembles the LUT address from the input signals.  <a href="#afd220cd4463cf6b9af31cef5c531c99c"></a><br /></td></tr>
-<tr class="memitem:a989bf441216c2bade79310c00b0617cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFullAdd_1_1behavioural.html#a989bf441216c2bade79310c00b0617cb">Output</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classFullAdd_1_1behavioural.html#a1ddd1a464dac0201f00547b256ebe7b9">addr</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
-<tr class="memdesc:a989bf441216c2bade79310c00b0617cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This process separates the result from the LUT into the proper outputs.  <a href="#a989bf441216c2bade79310c00b0617cb"></a><br /></td></tr>
+ <tr class="memitem:a7362444b590247fac759044885763bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFullAdd_1_1behavioural.html#a7362444b590247fac759044885763bc1">Output</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classFullAdd.html#af9ed3b7199b4ea3c9ec36241cbcd1814">Clk</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
+<tr class="memdesc:a7362444b590247fac759044885763bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This process separates the result from the LUT into the proper outputs.  <a href="#a7362444b590247fac759044885763bc1"></a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Signals"></a>
 Signals</h2></td></tr>
  <tr class="memitem:a1ddd1a464dac0201f00547b256ebe7b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFullAdd_1_1behavioural.html#a1ddd1a464dac0201f00547b256ebe7b9">addr</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="keywordtype">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">2</span> <span class="vhdlchar"> </span><span class="keywordflow">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a1ddd1a464dac0201f00547b256ebe7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal chooses the address on the LUT where the result should be.  <a href="#a1ddd1a464dac0201f00547b256ebe7b9"></a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ROM Based 1-bit Full Adder. </p>
@@ -104,52 +101,8 @@ Signals</h2></td></tr>
     This is considered a relatively fast architecture with consistent
     delay for all outputs, but it uses a lot of area.
 </pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd220cd4463cf6b9af31cef5c531c99c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd220cd4463cf6b9af31cef5c531c99c">&#9670;&nbsp;</a></span>Add()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"> <b><span class="vhdlchar"> </span></b> Add</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><b><b><a class="el" href="classFullAdd.html#aefb0fe5c03de49e04a8804270d82d286">A</a></b> <span class="vhdlchar"> </span></b> <em></em> , </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><b><b><a class="el" href="classFullAdd.html#a5efe61e4691199c7d3ffbbe4872056b4">B</a></b> <span class="vhdlchar"> </span></b> <em></em> , </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><b><b><a class="el" href="classFullAdd.html#a4ca3a2d6d69bbe9b21b97f6b0a8f1847">Cin</a></b> <span class="vhdlchar"> </span></b> <em></em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">Process</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This process assembles the LUT address from the input signals. </p>
-
-</div>
-</div>
-<a id="a989bf441216c2bade79310c00b0617cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a989bf441216c2bade79310c00b0617cb">&#9670;&nbsp;</a></span>Output()</h2>
+<a id="a7362444b590247fac759044885763bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7362444b590247fac759044885763bc1">&#9670;&nbsp;</a></span>Output()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +114,7 @@ Signals</h2></td></tr>
           <td class="memname"> <b><span class="vhdlchar"> </span></b> Output</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><b><b><a class="el" href="classFullAdd_1_1behavioural.html#a1ddd1a464dac0201f00547b256ebe7b9">addr</a></b> <span class="vhdlchar"> </span></b> <em></em>&#160;</td>
+          <td class="paramname"><b><b><a class="el" href="classFullAdd.html#af9ed3b7199b4ea3c9ec36241cbcd1814">Clk</a></b> <span class="vhdlchar"> </span></b> <em></em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,8 +154,6 @@ Signals</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This signal chooses the address on the LUT where the result should be. </p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -211,7 +162,7 @@ Signals</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 21:04:53 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 9 2020 16:59:48 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

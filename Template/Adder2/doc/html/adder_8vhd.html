@@ -94,8 +94,13 @@ Entities</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of simple 1-bit adder. </p>
-<p>Implements adder unsing ROM. Should synthesize as a LUT.</p>
-<dl class="section author"><dt>Author</dt><dd>Guilherme Shimabuko</dd></dl>
+<p><br  />
+ </p><pre class="fragment">    Implements adder unsing ROM. Should synthesize as a LUT. This design
+    differs from the first because it has only one process. This will
+    cause the signal to change one event later. Due to this, this design
+    should not be assynchornous, otherwise, you'd never know when to read
+    the signal. We included the clock to make it predictable.
+</pre><dl class="section author"><dt>Author</dt><dd>Guilherme Shimabuko</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-04-07 <pre class="fragment">Version History
 
@@ -138,7 +143,7 @@ THE POSSIBILITY OF SUCH DAMAGE.
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2020 21:04:53 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 9 2020 16:59:48 for Adder 1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

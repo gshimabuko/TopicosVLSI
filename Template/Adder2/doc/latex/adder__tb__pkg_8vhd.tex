@@ -1,0 +1,123 @@
+\hypertarget{adder__tb__pkg_8vhd}{}\doxysection{sim/adder\+\_\+tb\+\_\+pkg.vhd File Reference}
+\label{adder__tb__pkg_8vhd}\index{sim/adder\_tb\_pkg.vhd@{sim/adder\_tb\_pkg.vhd}}
+
+
+Testbench for a simple 1-\/bit adder \mbox{\hyperlink{classFullAdd}{Full\+Add}}.  
+
+
+\doxysubsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classadder__tb__pkg}{adder\+\_\+tb\+\_\+pkg}} package
+\begin{DoxyCompactList}\small\item\em States of \mbox{\hyperlink{classadder__tb}{adder\+\_\+tb}} F\+SM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Testbench for a simple 1-\/bit adder \mbox{\hyperlink{classFullAdd}{Full\+Add}}. 
+
+Testbench package for a simple 1-\/bit adder \mbox{\hyperlink{classFullAdd}{Full\+Add}}.
+
+Uses a R\+AM for Input and another R\+AM for expected output. Implements Adder and compares output with Expected Output Ram. Since this design takes one full clock cycle to output the correct answer, an F\+SM was built to ensure stimulus signal would be stable long enough.
+
+\begin{DoxyAuthor}{Author}
+Guilherme Shimabuko
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/04-\/07 \begin{DoxyVerb}Version History
+
+Version     Date            Author              Changes
+
+1.1         2020-03-19      GSHIMABUKO          Block finished and tested
+
+1.0         2020-03-18      GSHIMABUKO          Block Created
+\end{DoxyVerb}
+
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classFullAdd}{Full\+Add}} \mbox{\hyperlink{classInput__ROM}{Input\+\_\+\+R\+OM}} \mbox{\hyperlink{classOutput__ROM}{Output\+\_\+\+R\+OM}} \mbox{\hyperlink{classadder__pkg}{adder\+\_\+pkg}} ~\newline
+
+\end{DoxyPrecond}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 Shima\textquotesingle{}s Digital Hardware \begin{DoxyVerb}Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+* Neither the name of Shima's DIgital Hardware  nor the names of its
+  contributors may be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTI-
+CULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SHIMA'S DIGITAL HARDWARE
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+THE POSSIBILITY OF SUCH DAMAGE.
+\end{DoxyVerb}
+
+\end{DoxyCopyright}
+Implements F\+SM type for testbench.
+
+\begin{DoxyAuthor}{Author}
+Guilherme Shimabuko
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/04-\/07 \begin{DoxyVerb}Version History
+
+Version     Date            Author              Changes
+
+1.0         2020-03-19      GSHIMABUKO          Block Created
+\end{DoxyVerb}
+
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classFullAdd}{Full\+Add}} \mbox{\hyperlink{classInput__ROM}{Input\+\_\+\+R\+OM}} \mbox{\hyperlink{classOutput__ROM}{Output\+\_\+\+R\+OM}} \mbox{\hyperlink{classadder__pkg}{adder\+\_\+pkg}} ~\newline
+
+\end{DoxyPrecond}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 Shima\textquotesingle{}s Digital Hardware \begin{DoxyVerb}Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+* Neither the name of Shima's DIgital Hardware  nor the names of its
+  contributors may be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTI-
+CULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SHIMA'S DIGITAL HARDWARE
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+THE POSSIBILITY OF SUCH DAMAGE.
+\end{DoxyVerb}
+ 
+\end{DoxyCopyright}
