@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src
+Esevseg
+Z0 w1588872849
+Z1 DPx4 work 10 sevseg_pkg 0 22 lJ7XL4k<LE5X_`9<KT5ai3
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 d/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg
+Z6 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg.vhd
+Z7 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg.vhd
+l0
+L65
+V6dL0U:ZYWbWm`e@9b=iL82
+!s100 _J8QVlm4j>Y0E1PZX@e=83
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1588873692
+!i10b 1
+Z10 !s108 1588873692.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg.vhd|
+Z12 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioural
+R1
+R2
+R3
+R4
+Z15 DEx4 work 6 sevseg 0 22 6dL0U:ZYWbWm`e@9b=iL82
+l90
+L88
+Z16 VHFl11Ei0H8id9jbEAc6aU1
+Z17 !s100 _[W?glez^n8NMjlzFm0Y73
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Psevseg_pkg
+R3
+R4
+Z18 w1588873652
+R5
+Z19 8/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg_pkg.vhd
+Z20 F/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg_pkg.vhd
+l0
+L62
+VlJ7XL4k<LE5X_`9<KT5ai3
+!s100 `VF<caC^Gk@P42B6g@?BN1
+R8
+32
+b1
+Z21 !s110 1588873689
+!i10b 1
+Z22 !s108 1588873689.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg_pkg.vhd|
+Z24 !s107 /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/SevenSeg/src/sevseg_pkg.vhd|
+!i113 1
+R13
+R14
+Bbody
+R1
+R3
+R4
+l0
+L77
+VfL9SJ0i`_nAD8I`A`?bd=2
+!s100 S79Wkl?]1dScE1aBn`==10
+R8
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R13
+R14

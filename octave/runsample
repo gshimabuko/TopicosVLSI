@@ -1,0 +1,2 @@
+#!/bin/octave -qf
+run sig_gen.m

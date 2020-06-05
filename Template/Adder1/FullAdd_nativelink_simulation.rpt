@@ -1,0 +1,51 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  /opt/Quartus/quartus/linux64/
+Quartus sim root      :  /opt/Quartus/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  FullAdd.vho
+Sim SDF file          :  FullAdd__vhdl.sdo
+Sim dir               :  simulation/modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script /opt/Quartus/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Probing transcript
+ModelSim-Altera Info: # do FullAdd_run_msim_gate_vhdl.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying /opt/Quartus/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {FullAdd.vho}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 17:26:20 on Apr 09,2020
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work FullAdd.vho 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package cycloneive_atom_pack
+ModelSim-Altera Info: # -- Loading package cycloneive_components
+ModelSim-Altera Info: # -- Compiling entity hard_block
+ModelSim-Altera Info: # -- Compiling architecture structure of hard_block
+ModelSim-Altera Info: # -- Compiling entity FullAdd
+ModelSim-Altera Info: # -- Compiling architecture structure of FullAdd
+ModelSim-Altera Info: # End time: 17:26:20 on Apr 09,2020, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+Info: NativeLink simulation flow was successful

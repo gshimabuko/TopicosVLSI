@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder3/src/adder_pkg.vhd
+source_file = 1, /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder3/src/adder.vhd
+source_file = 1, /opt/Quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/Quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/Quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/Quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/gshimabuko/Documents/Estudo/Digital_Electronics/vhdl/Topicos/Template/Adder3/db/FullAdd.cbx.xml
+design_name = hard_block
+design_name = FullAdd
+instance = comp, \Sum~output\, Sum~output, FullAdd, 1
+instance = comp, \Cout~output\, Cout~output, FullAdd, 1
+instance = comp, \Cin~input\, Cin~input, FullAdd, 1
+instance = comp, \B~input\, B~input, FullAdd, 1
+instance = comp, \A~input\, A~input, FullAdd, 1
+instance = comp, \Mux0~0\, Mux0~0, FullAdd, 1
+instance = comp, \Mux1~0\, Mux1~0, FullAdd, 1

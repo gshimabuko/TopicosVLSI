@@ -1,0 +1,204 @@
+# Loading project SevenSeg
+# reading /opt/Quartus/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project integracao_agc_snr
+# Compile of AGC_module_basic.vhd failed with 6 errors.
+# Compile of AGC_Pkg.vhd failed with 3 errors.
+# Compile of Dvbs2xPkg.vhd failed with 3 errors.
+# Compile of Dvbs2xTopAgcSnr.vhd failed with 4 errors.
+# Compile of FifoModuleBasic.vhd failed with 4 errors.
+# Compile of SnrModuleBasic.vhd failed with 6 errors.
+# Compile of SnrPkg.vhd failed with 3 errors.
+# Compile of UtilsPkg.vhd failed with 3 errors.
+# Compile of SimIntAgcSnr.vhd failed with 5 errors.
+# Compile of TbAgc.vhd failed with 5 errors.
+# Compile of TbInteg.vhd failed with 4 errors.
+# 11 compiles, 11 failed with 46 errors.
+# Compile of UtilsPkg.vhd failed with 3 errors.
+vlib dvbs2x
+vmap dvbs2x dvbs2x
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap dvbs2x dvbs2x 
+# Modifying /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/integracao_agc_snr.mpf
+# Compile of Dvbs2xPkg.vhd failed with 4 errors.
+# Compile of AGC_module_basic.vhd failed with 13 errors.
+# Compile of AGC_Pkg.vhd failed with 4 errors.
+# Compile of Dvbs2xPkg.vhd failed with 4 errors.
+# Compile of Dvbs2xTopAgcSnr.vhd failed with 7 errors.
+# Compile of FifoModuleBasic.vhd failed with 7 errors.
+# Compile of SnrModuleBasic.vhd failed with 13 errors.
+# Compile of SnrPkg.vhd failed with 4 errors.
+# Compile of UtilsPkg.vhd failed with 4 errors.
+# Compile of SimIntAgcSnr.vhd failed with 10 errors.
+# Compile of TbAgc.vhd failed with 10 errors.
+# Compile of TbInteg.vhd failed with 7 errors.
+# 11 compiles, 11 failed with 83 errors.
+# Compile of Dvbs2xPkg.vhd failed with 4 errors.
+# Compile of AGC_Pkg.vhd failed with 4 errors.
+# Compile of AGC_module_basic.vhd failed with 13 errors.
+# Compile of AGC_Pkg.vhd failed with 4 errors.
+# Compile of Dvbs2xPkg.vhd was successful.
+# Compile of Dvbs2xTopAgcSnr.vhd was successful.
+# Compile of FifoModuleBasic.vhd failed with 4 errors.
+# Compile of SnrModuleBasic.vhd failed with 10 errors.
+# Compile of SnrPkg.vhd was successful.
+# Compile of UtilsPkg.vhd was successful.
+# Compile of SimIntAgcSnr.vhd failed with 4 errors.
+# Compile of TbAgc.vhd failed with 4 errors.
+# Compile of TbInteg.vhd was successful.
+# 11 compiles, 6 failed with 39 errors.
+# Compile of AGC_module_basic.vhd failed with 7 errors.
+# Compile of AGC_Pkg.vhd was successful.
+# Compile of Dvbs2xPkg.vhd was successful.
+# Compile of Dvbs2xTopAgcSnr.vhd was successful.
+# Compile of FifoModuleBasic.vhd was successful.
+# Compile of SnrModuleBasic.vhd was successful.
+# Compile of SnrPkg.vhd was successful.
+# Compile of UtilsPkg.vhd was successful.
+# Compile of SimIntAgcSnr.vhd was successful.
+# Compile of TbAgc.vhd failed with 5 errors.
+# Compile of TbInteg.vhd was successful.
+# 11 compiles, 2 failed with 12 errors.
+# Compile of AGC_module_basic.vhd was successful.
+# Compile of AGC_Pkg.vhd was successful.
+# Compile of Dvbs2xPkg.vhd was successful.
+# Compile of Dvbs2xTopAgcSnr.vhd was successful.
+# Compile of FifoModuleBasic.vhd was successful.
+# Compile of SnrModuleBasic.vhd was successful.
+# Compile of SnrPkg.vhd was successful.
+# Compile of UtilsPkg.vhd was successful.
+# Compile of SimIntAgcSnr.vhd was successful.
+# Compile of TbAgc.vhd failed with 5 errors.
+# Compile of TbInteg.vhd was successful.
+# 11 compiles, 1 failed with 5 errors.
+# Compile of AGC_module_basic.vhd was successful.
+# Compile of AGC_Pkg.vhd was successful.
+# Compile of Dvbs2xPkg.vhd was successful.
+# Compile of Dvbs2xTopAgcSnr.vhd was successful.
+# Compile of FifoModuleBasic.vhd was successful.
+# Compile of SnrModuleBasic.vhd was successful.
+# Compile of SnrPkg.vhd was successful.
+# Compile of UtilsPkg.vhd was successful.
+# Compile of SimIntAgcSnr.vhd was successful.
+# Compile of TbAgc.vhd failed with 5 errors.
+# Compile of TbInteg.vhd was successful.
+# 11 compiles, 1 failed with 5 errors.
+vsim dvbs2x.tbinteg
+# vsim dvbs2x.tbinteg 
+# Start time: 17:13:54 on Jun 04,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading dvbs2x.dvbs2xpkg
+# Loading dvbs2x.dvbs2xcomponentspkg
+# Loading dvbs2x.tbinteg(rtl)
+# Loading dvbs2x.dvbs2xtopagcsnr(rtl)
+# Loading dvbs2x.agcpkg
+# Loading dvbs2x.utilspkg(body)
+# Loading dvbs2x.agccomponentspkg
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading dvbs2x.dvbs2xagc(rtl)
+# ** Warning: (vsim-3473) Component instance "U_1 : div_gen_0" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tbinteg/uut/uut_AGC File: /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/src/AGC_module_basic.vhd
+# Loading dvbs2x.snrpkg
+# Loading dvbs2x.snrcomponentspkg
+# Loading dvbs2x.dvbs2xsnr(rtl)
+# Loading dvbs2x.fifomodulebasic(rtl)
+# Load canceled
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_myhostname.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-7) Failed to open VHDL file "arq_input/VectorsPilotsSnr/VectorsPilots_snr_-5.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tbinteg
+# ** Warning: (vsim-7) Failed to open VHDL file "arq_input/DataOutSnr/snr_out_snr_-5.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tbinteg
+# ** Fatal: (vsim-7) Failed to open VHDL file "arq_input/VectorsPilotsSnr/VectorsPilots_snr_-5.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 10 ns  Iteration: 1  Process: /tbinteg/read_from_file File: /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/TbInteg.vhd
+# Fatal error in ForLoop loop at /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/TbInteg.vhd line 196
+# 
+# HDL call sequence:
+# Stopped at /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/TbInteg.vhd 196 ForLoop loop
+# 
+quit -sim
+# End time: 17:14:43 on Jun 04,2020, Elapsed time: 0:00:49
+# Errors: 3, Warnings: 13
+vsim dvbs2x.simintagcsnr
+# vsim dvbs2x.simintagcsnr 
+# Start time: 17:16:19 on Jun 04,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading dvbs2x.dvbs2xpkg
+# Loading dvbs2x.dvbs2xcomponentspkg
+# Loading dvbs2x.agcpkg
+# Loading dvbs2x.simintagcsnr(rtl)
+# Loading dvbs2x.dvbs2xtopagcsnr(rtl)
+# Loading dvbs2x.utilspkg(body)
+# Loading dvbs2x.agccomponentspkg
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading dvbs2x.dvbs2xagc(rtl)
+# ** Warning: (vsim-3473) Component instance "U_1 : div_gen_0" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /simintagcsnr/uut/uut_AGC File: /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/src/AGC_module_basic.vhd
+# Loading dvbs2x.snrpkg
+# Loading dvbs2x.snrcomponentspkg
+# Loading dvbs2x.dvbs2xsnr(rtl)
+# Loading dvbs2x.fifomodulebasic(rtl)
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_myhostname.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-7) Failed to open VHDL file "arq_input/VectorsInput/VectorsInput_0.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /simintagcsnr
+# ** Warning: (vsim-7) Failed to open VHDL file "arq_input/VectorsPilots/VectorsPilots_0.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /simintagcsnr
+# ** Warning: (vsim-7) Failed to open VHDL file "arq_input/VectorsOut/VectorsOut_0.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /simintagcsnr
+# ** Fatal: (vsim-7) Failed to open VHDL file "arq_input/VectorsInput/VectorsInput_0.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 10 ns  Iteration: 1  Process: /simintagcsnr/read_from_file File: /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/SimIntAgcSnr.vhd
+# Fatal error in ForLoop loop at /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/SimIntAgcSnr.vhd line 167
+# 
+# HDL call sequence:
+# Stopped at /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/SimIntAgcSnr.vhd 167 ForLoop loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/sim/SimIntAgcSnr.vhd 167 ForLoop loop
+# 
+restart -f
+# ** Warning: (vsim-3473) Component instance "U_1 : div_gen_0" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /simintagcsnr/uut/uut_AGC File: /home/gshimabuko/Documents/Estagio/AGC/SoC_Architecture/DvbS2x/integracao_agc_snr/src/AGC_module_basic.vhd
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 17:17:21 on Jun 04,2020, Elapsed time: 0:01:02
+# Errors: 3, Warnings: 15
